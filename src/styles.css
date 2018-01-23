@@ -23,3 +23,17 @@ i:hover {
     font-weight: 300;
     color: white;
 }
+
+.liUpdates {
+    list-style: none;
+}
+
+.updates {
+    color: #E98C3F;
+    text-decoration: none;
+}
+
+.updates:hover {
+    color: #E98C3F;
+    text-decoration: none;
+}

@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
 
   public portfolio: Portfolio;
   public logOpen: boolean = true;
+  public updateOpen: boolean = true;
 
   public ngOnInit(): void {
     this.portfolio = {
@@ -88,6 +89,10 @@ export class AppComponent implements OnInit {
     switch (valueToToggle) {
       case 'logOpen':
         this.logOpen = !this.logOpen;
+        break;
+      case 'updateOpen':
+        this.updateOpen = !this.updateOpen;
+        break;
     }
   }
 

@@ -19,6 +19,7 @@
             </ng-template>
             Changelog
         </h3>
+        <p class="description">I've been studying and working hard as a developer. Here are some of the highlights.</p>
         <div *ngIf="!logOpen">
             <ul>
                 <li 
@@ -29,6 +30,23 @@
                     <div>{{ change.month + change.year }}</div>
                     <div>{{ change.highlight }}</div>
                     <div *ngIf="change.showDetails" class="changeLogDetails">{{ change.details }}</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <h3>
+            <i class="fa fa-plus" *ngIf="updateOpen; else updateExpanded" (click)="toggleOpen('updateOpen')"></i>
+            <ng-template #updateExpanded>
+                <i class="fa fa-minus" (click)="toggleOpen('updateOpen')"></i>
+            </ng-template>
+            Updates/Releases
+        </h3>
+        <div *ngIf="!updateOpen">
+            <ul>
+                <li *ngFor="let update of portfolio.updates" class="liUpdates pt-3">
+                    <a [href]="update.link" class="updates" target="blank">{{ update.description }}</a>
                 </li>
             </ul>
         </div>
