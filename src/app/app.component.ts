@@ -16,7 +16,18 @@ export class AppComponent implements OnInit {
       middleName: '',
       lastName: 'Bowman',
       subHeading: 'Full-stack .NET Developer',
-      socialMedia: [],
+      socialMedia: [
+        {
+          icon: 'fa fa-linkedin fa-2x',
+          link: 'www.linkedin.com/in/hugh-bowman-009125125',
+          color: '#0077B5'
+        },
+        {
+          icon: 'fa fa-github fa-2x',
+          link: 'https://github.com/digitopoi',
+          color: '#6e5494'
+        }
+      ],
       introduction: `Hi, I'm Hugh Bowman. I'm an entry level developer specializing in ASP.NET on the backend and Angular on the frontend.`,
       changeLog: [],
       updates: [],
