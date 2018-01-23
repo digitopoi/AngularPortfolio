@@ -14,3 +14,12 @@ body {
 .smallerImage {
     width: 20%;
 }
+
+i:hover {
+    color: white !important;
+}
+
+.changeLogDetails {
+    font-weight: 300;
+    color: white;
+}
