@@ -52,4 +52,17 @@
         </div>
     </div>
 
+    <div>
+        <h3>
+            <i (click)="toggleOpen('bioOpen')" class="fa fa-plus" *ngIf="bioOpen; else bioExpanded"></i>
+            <ng-template #bioExpanded>
+                <i class="fa fa-minus" (click)="toggleOpen('bioOpen')"></i>
+            </ng-template>
+            Speaker Bio
+        </h3>
+        <div *ngIf="!bioOpen" class="speakerBio p-4 mb-5">
+            {{ portfolio.speakerBio }}
+        </div>
+    </div>
+
 </div>

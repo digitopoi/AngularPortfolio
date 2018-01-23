@@ -37,3 +37,9 @@ i:hover {
     color: #E98C3F;
     text-decoration: none;
 }
+
+.speakerBio {
+    background: #2f313b;
+    color: white;
+    line-height: 1.8em;
+}
